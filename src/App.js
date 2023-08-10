@@ -21,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+    <h1>TODO APP</h1>
       <form onSubmit={addTodo}>
         <input placeholder="enter here" id='todo' type="text" />
         <button type='submit'>ADD</button>
