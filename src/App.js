@@ -29,7 +29,6 @@ function App() {
         {todos.map((todo, index) => (
           <li key={index}>
             {todo.task}
-            <button onClick={()=>{}}>Edit</button>
             <button onClick={() => deleteTodo(index)}>Delete</button>
           </li>
         ))}
