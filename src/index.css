@@ -13,9 +13,16 @@ code {
 }
 
 
+/* AppStyles.css */
+
 .App {
   text-align: center;
   margin-top: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 form {
@@ -33,18 +40,50 @@ input[type="text"] {
   font-size: 16px;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button {
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
 }
 
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
 button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+button.edit {
+  background-color: #ffc107;
+  color: black;
+ 
+}
+
+button.edit:hover {
+  background-color: #ffae00;
+}
+
+button.save {
+  background-color: #28a745;
+  color: white;
+}
+
+button.save:hover {
+  background-color: #218838;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #c82333;
 }
 
 ul {
@@ -62,18 +101,20 @@ li {
   padding: 10px;
   margin-bottom: 10px;
   font-size: 18px;
+  position: relative;
 }
 
-button {
-  padding: 5px 10px;
-  background-color: #e74c3c;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 14px;
+li > div {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
-button:hover {
-  background-color: #c0392b;
+li input[type="text"] {
+  width: 100%;
 }
+
+li > div > button {
+  margin-left: 10px;
+}
+
